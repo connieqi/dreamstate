@@ -1,10 +1,27 @@
 html {
     height: 100%;
+    width:100%;
+    background-color: black;
 }
 
 body {
-    margin: 0;
+    margin: 21px 0;
     height: 100%;
+    width:100%;
 
-    background-color: #D4D5FC;
+    background-image: url("/static/images/grid.png");
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-position: top left;
+    background-color: white;
+
+    /*background-color: #D4D5FC;*/
+}
+
+#heading-container, #content-container {
+    text-align: center;
+}
+
+#nav-container {
+    position: absolute;
 }

@@ -1,30 +1,17 @@
-const Page = React.createClass({
-    render: function() {
-        const style = {
-            
-        };
-
-        return (
-            <div id="page-wrapper">
-                <Header />
-                <Nav />
-            </div>
-        );
-    }
-});
-
 const Header = React.createClass({
     render: function() {
         const style = {
-            margin: "10px 0",
+            margin: '10px auto 40px',
+            display: 'inline-block',
+            overflow: 'hidden',
+            fontSize: '24px',
             letterSpacing: '0.75em',
-            textTransform: 'uppercase'
+            textTransform: 'uppercase',
+            backgroundColor: 'white'
         };
 
         return (
-            <div id="header" style={style}><em>
-                C&#9786;nnie's dre&#10032;m st&#10032;te... c&#9786;ming s&#9786;&#9786;n.............
-                </em></div>
+            <h1 id="header" style={style}><em>Dream State 0.1</em></h1>
         );
     }
 });
@@ -38,27 +25,48 @@ const Nav = React.createClass({
         return (
             <div id="nav">
                 <ul style={ulStyle}>
-
+                    <ExternalLink text="Photos" href="https://cyq1.tumblr.com" />
+                    <Link text="Digital" href="#" />
+                    <Link text="Color Palette Fun" href="#" />
+                    <Link text="Links" href="#" />
+                    <Link text="Garbage" href="#" />
                 </ul>
             </div>
         );
     }
 });
 
+const linkStyle = {
+    color: 'black',
+    backgroundColor: 'white',
+    listStyleType: 'none',
+    fontSize: '16px',
+    letterSpacing: '0.75em',
+    textTransform: 'uppercase',
+    lineHeight: '2rem',
+};
+
 const Link = React.createClass({
     render: function() {
-        const style = {
-            color: 'black',
-            listStyleType: 'none'
-        };
-
         return (
-            <li><a href="#" style={style}>{this.props.text}</a></li>
+            <li><a href={this.props.href} style={linkStyle}><em>{this.props.text}</em></a></li>
+        );
+    }
+});
+
+const ExternalLink = React.createClass({
+    render: function() {
+        return (
+            <li><a href={this.props.href} target="_blank" aria-label="opens new tab" style={linkStyle}><em>{this.props.text}</em></a></li>
         );
     }
 });
 
 ReactDOM.render(
-    <Page />,
+    <Header />,
     document.getElementById('heading-container')
+);
+ReactDOM.render(
+    <Nav />,
+    document.getElementById('nav-container')
 );
