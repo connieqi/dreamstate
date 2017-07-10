@@ -10,6 +10,18 @@ def index():
     };
     return render_template('index.html', **options)
 
+@app.route('/digital')
+def digital():
+    options = {
+    };
+    return render_template('digital.html', **options)
+
+@app.route('/links')
+def links():
+    options = {
+    };
+    return render_template('links.html', **options)
+
 # this guy handles static files
 @app.route('/<path:filename>')
 def send_pic(filename):

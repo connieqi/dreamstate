@@ -11,7 +11,9 @@ const Header = React.createClass({
         };
 
         return (
-            <h1 id="header" style={style}><em>Dream State 0.1</em></h1>
+            <a href="/" style={{color: 'black'}}>
+                <h1 id="header" style={style}><em>Dream State 0.1</em></h1>
+            </a>
         );
     }
 });
@@ -25,14 +27,16 @@ const Nav = React.createClass({
         return (
             <div id="nav">
                 <ul style={ulStyle}>
-                    <ExternalLink text="Photos" href="https://cyq1.tumblr.com" />
-                    <Link text="Digital" href="#" />
-                    <Link text="Color Palette Fun" href="#" />
-                    <Link text="Links" href="#" />
-                    <Link text="Garbage" href="#" />
+                    <Link text="Digital" href="/digital" />
+                    <Link text="Photos" href="https://cyq1.tumblr.com" />
+                    <Link text="Links" href="/links" />
                 </ul>
             </div>
         );
+
+        // stuff for later
+        // <Link text="Color Palette Fun" href="#" />
+        // <Link text="Garbage" href="#" />
     }
 });
 
