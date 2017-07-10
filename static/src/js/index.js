@@ -1,3 +1,14 @@
+const LandingPage = React.createClass({
+    render: function() {
+        return (
+            <div>
+                <CenterImage src="static/images/mtns.jpg" />
+
+            </div>
+        )
+    }
+});
+
 const CenterImage = React.createClass({
     render: function() {
         const style = {
@@ -5,12 +16,12 @@ const CenterImage = React.createClass({
             border: '2px solid Blue',
         }
         return (
-            <img src="static/images/mtns.jpg" style={style}></img>
+            <img src={this.props.src} style={style}></img>
         )
     }
 });
 
 ReactDOM.render(
-    <CenterImage />,
+    <LandingPage />,
     document.getElementById('content-container')
 );

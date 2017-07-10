@@ -5,9 +5,11 @@ html {
 }
 
 body {
-    margin: 21px 0;
-    height: 100%;
-    width:100%;
+    margin: 0;
+    height: auto;
+    min-height: 100%;
+    width: 100%;
+    overflow: auto;
 
     background-image: url("/static/images/grid.png");
     background-attachment: fixed;
@@ -18,8 +20,18 @@ body {
     /*background-color: #D4D5FC;*/
 }
 
+#top-bar {
+    height: 21px;
+    width: 100%;
+    background-color: black;
+}
+
 #heading-container, #content-container {
     text-align: center;
+}
+
+#content-container {
+    padding-bottom: 50px;
 }
 
 #nav-container {
