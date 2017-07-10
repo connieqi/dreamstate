@@ -27,9 +27,9 @@ const Nav = React.createClass({
     return (
       <div id="nav">
         <ul style={ulStyle}>
-          <Link text="Digital" href="/digital" />
-          <Link text="Photos" href="https://cyq1.tumblr.com" />
-          <Link text="Links" href="/links" />
+          <li><Link text="Digital" href="/digital" /></li>
+          <li><Link text="Photos" href="https://cyq1.tumblr.com" /></li>
+          <li><Link text="Links" href="/links" /></li>
         </ul>
       </div>
     );
@@ -53,7 +53,7 @@ const linkStyle = {
 const Link = React.createClass({
   render: function() {
       return (
-          <li><a href={this.props.href} style={linkStyle}><em>{this.props.text}</em></a></li>
+          <a href={this.props.href} style={linkStyle}><em>{this.props.text}</em></a>
       );
   }
 });
@@ -61,7 +61,7 @@ const Link = React.createClass({
 const ExternalLink = React.createClass({
   render: function() {
     return (
-      <li><a href={this.props.href} target="_blank" aria-label="opens new tab" style={linkStyle}><em>{this.props.text}</em></a></li>
+      <a href={this.props.href} target="_blank" aria-label="opens new tab" style={linkStyle}><em>{this.props.text}</em></a>
     );
   }
 });
