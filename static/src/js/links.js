@@ -16,7 +16,6 @@ const PageContent = React.createClass({
     render: function() {
         return (
             <div>
-                <Link text="http://labs.echonest.com/3dServer/maze.html" href="http://labs.echonest.com/3dServer/maze.html" desc=" &mdash; trippy, check this out"/>
                 <Link text="https://www.shortoftheweek.com/" href="https://www.shortoftheweek.com/" desc=" &mdash; new short films curated by Vimeo"/>
                 <Link text="Astronomy Picture of the Day" href="http://apod.nasa.gov/apod/astropix.html" desc="" />
             </div>
