@@ -22,6 +22,12 @@ def links():
     };
     return render_template('links.html', **options)
 
+@app.route('/reading-log')
+def reading_log():
+    options = {
+    };
+    return render_template('reading-log.html', **options)
+
 # this guy handles static files
 @app.route('/<path:filename>')
 def send_pic(filename):

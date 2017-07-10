@@ -29,6 +29,7 @@ const Nav = React.createClass({
         <ul style={ulStyle}>
           <li><Link text="Digital" href="/digital" /></li>
           <li><Link text="Photos" href="https://cyq1.tumblr.com" /></li>
+          <li><Link text="Reading Log" href="/reading-log" /></li>
           <li><Link text="Links" href="/links" /></li>
         </ul>
       </div>
