@@ -4,16 +4,23 @@ const PageContent = React.createClass({
       listStyleType: 'none'
     };
 
+    const hStyle = {
+      display: 'inline-block',
+      overflow: 'hidden',
+      letterSpacing: '0.4em',
+      backgroundColor: 'white'
+    }
+
     return (
       <div style={textStyle}>
-        <h2>Currently Reading</h2>
+        <h2 style={hStyle}><em>Currently Reading</em></h2>
         <ol style={olStyle}>
           <li><p>Foundation - Isaac Asimov</p></li>
           <li><Link text="Tech Against Trump" desc=" - Logic Magazine" href="https://logicmag.io/tech-against-trump/" /></li>
           <li><Link text="NeuroTribes: The Legacy of Autism and the Future of Neurodiversity" desc=" - Steve Silberman" href="https://www.goodreads.com/book/show/22514020-neurotribes" /></li>
 
         </ol>
-        <h2>2017</h2>
+        <h2 style={hStyle}><em>2017</em></h2>
         <ol style={olStyle}>
           <li><Link text="We Should All Be Feminists" desc=" - Chiminanda Ngozi Adichie" href="http://everydayfeminism.com/2014/09/we-should-all-be-feminists/" /></li>
           <li><p>Paper Girls Vol 2</p></li>
