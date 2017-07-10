@@ -1,7 +1,7 @@
 const Header = React.createClass({
   render: function() {
     const style = {
-      margin: '10px auto 40px',
+      margin: '10px auto 32px',
       display: 'inline-block',
       overflow: 'hidden',
       fontSize: '24px',
