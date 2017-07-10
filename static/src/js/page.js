@@ -7,16 +7,21 @@ const Header = React.createClass({
       fontSize: '24px',
       letterSpacing: '0.75em',
       textTransform: 'uppercase',
-      backgroundColor: 'white'
+      color: 'black',
+
     };
 
     return (
-      <a href="/" style={{color: 'black'}}>
-        <h1 id="header" style={style}><em>Dream State 0.1</em></h1>
+      <a href="/" style={style}>
+        <img src="/static/images/holo-title.gif" />
       </a>
     );
   }
 });
+
+const h1Style = {
+  backgroundColor: 'white'
+};
 
 const Nav = React.createClass({
   render: function() {
