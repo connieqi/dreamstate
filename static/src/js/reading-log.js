@@ -15,7 +15,6 @@ const PageContent = React.createClass({
       <div style={textStyle}>
         <h2 style={hStyle}><em>Currently Reading</em></h2>
         <ol style={olStyle}>
-          <li><Link text="Foundation" desc=" - Isaac Asimov" href="https://www.goodreads.com/book/show/29579.Foundation" /></li>
           <li><Link text="Tech Against Trump" desc=" - Logic Magazine" href="https://logicmag.io/tech-against-trump/" /></li>
           <li><Link text="NeuroTribes: The Legacy of Autism and the Future of Neurodiversity" desc=" - Steve Silberman" href="https://www.goodreads.com/book/show/22514020-neurotribes" /></li>
 
@@ -41,6 +40,8 @@ const PageContent = React.createClass({
           <li><Link text="Ms. Marvel Vol 1" href="https://www.goodreads.com/book/show/20898019-ms-marvel-vol-1" /></li>
           <li><Link text="The Curious Incident of the Dog in the Night-Time" desc=" - Mark Haddon" href="https://www.goodreads.com/book/show/1618.The_Curious_Incident_of_the_Dog_in_the_Night_Time" /></li>
           <li><Link text="Bitch Planet Vol 2" href="https://www.goodreads.com/book/show/29972029-bitch-planet-vol-2" /></li>
+          <li><Link text="Foundation" desc=" - Isaac Asimov" href="https://www.goodreads.com/book/show/29579.Foundation" /></li>
+          <li><Link text="The Man in the High Castle" desc=" - Philip K. Dick" href="https://www.goodreads.com/book/show/216363.The_Man_in_the_High_Castle" /></li>
         </ol>
       </div>
     );
@@ -62,7 +63,7 @@ const Link = React.createClass({
   render: function() {
     return (
       <p>
-        <a href={this.props.href} target="_blank" style={linkStyle}><em>{this.props.text}</em></a><span style={textStyle}>{this.props.desc}</span>
+        <a href={this.props.href} target="_blank" rel="noopener noreferrer" style={linkStyle}><em>{this.props.text}</em></a><span style={textStyle}>{this.props.desc}</span>
       </p>
     );
   }
