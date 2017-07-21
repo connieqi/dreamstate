@@ -1,18 +1,25 @@
 const PageContent = React.createClass({
   render: function() {
-    const olStyle = {
-      listStyleType: 'none'
+    const contentStyle = {
+      backgroundColor: 'white',
+      width: '650px',
+      paddingRight: '20px',
+      paddingBottom: '10px',
+      marginBottom: '30px'
     };
-
+    const olStyle = {
+      textAlign: 'left'
+    };
     const hStyle = {
       display: 'inline-block',
       overflow: 'hidden',
       letterSpacing: '0.4em',
       backgroundColor: 'white'
-    }
+    };
 
     return (
       <div>
+      <div style={contentStyle}>
         <h2 style={hStyle}><em>Currently Reading</em></h2>
         <ol style={olStyle}>
           <li><Link text="G&ouml;del, Escher, Bach: An Eternal Golden Braid" desc=" - Douglas R. Hofstadter" href="https://www.goodreads.com/book/show/24113.G_del_Escher_Bach" /></li>
@@ -21,6 +28,8 @@ const PageContent = React.createClass({
           <li><Link text="NeuroTribes: The Legacy of Autism and the Future of Neurodiversity" desc=" - Steve Silberman" href="https://www.goodreads.com/book/show/22514020-neurotribes" /></li>
 
         </ol>
+      </div>
+      <div style={contentStyle}>
         <h2 style={hStyle}><em>2017</em></h2>
         <ol style={olStyle}>
           <li><Link text="We Should All Be Feminists" desc=" - Chiminanda Ngozi Adichie" href="http://everydayfeminism.com/2014/09/we-should-all-be-feminists/" /></li>
@@ -46,6 +55,7 @@ const PageContent = React.createClass({
           <li><Link text="The Man in the High Castle" desc=" - Philip K. Dick" href="https://www.goodreads.com/book/show/216363.The_Man_in_the_High_Castle" /></li>
           <li><Link text="The Martian Obelisk" desc=" - Linda Nagata" href="http://www.tor.com/2017/07/19/the-martian-obelisk/" /></li>
         </ol>
+      </div>
       </div>
     );
   }

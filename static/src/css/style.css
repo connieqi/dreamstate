@@ -32,6 +32,8 @@ body {
 
 #content-container {
     padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
 }
 
 #nav-container {
