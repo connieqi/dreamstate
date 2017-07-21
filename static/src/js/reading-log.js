@@ -12,9 +12,11 @@ const PageContent = React.createClass({
     }
 
     return (
-      <div style={textStyle}>
+      <div>
         <h2 style={hStyle}><em>Currently Reading</em></h2>
         <ol style={olStyle}>
+          <li><Link text="G&ouml;del, Escher, Bach: An Eternal Golden Braid" desc=" - Douglas R. Hofstadter" href="https://www.goodreads.com/book/show/24113.G_del_Escher_Bach" /></li>
+          <li><Link text="Wild" desc=" - Cheryl Strayed" href="https://www.goodreads.com/book/show/12262741-wild" /></li>
           <li><Link text="Tech Against Trump" desc=" - Logic Magazine" href="https://logicmag.io/tech-against-trump/" /></li>
           <li><Link text="NeuroTribes: The Legacy of Autism and the Future of Neurodiversity" desc=" - Steve Silberman" href="https://www.goodreads.com/book/show/22514020-neurotribes" /></li>
 
@@ -29,8 +31,8 @@ const PageContent = React.createClass({
           <li><Link text="The Bluest Eye" desc=" - Toni Morrison" href="https://www.goodreads.com/book/show/11337.The_Bluest_Eye" /></li>
           <li><Link text="Shelter" desc=" - Jung Yun" href="https://www.goodreads.com/book/show/25658832-shelter" /></li>
           <li><Link text="Tell Me How It Ends: An Essay in 40 Questions" desc=" - Valeria Luiselli" href="https://www.goodreads.com/book/show/33608721-tell-me-how-it-ends" /></li>
-          <li><p>Fresh off the Boat - Free Comic Book Day</p></li>
-          <li><p>Ka #1 - Marvel and Cirque du Soleil</p></li>
+          <li><p><span style={textStyle}>Fresh off the Boat - Free Comic Book Day</span></p></li>
+          <li><p><span style={textStyle}>Ka #1 - Marvel and Cirque du Soleil</span></p></li>
           <li><Link text="The Sandmeyer Reaction" desc=" - Michael Chabon" href="https://www.nytimes.com/2016/11/18/books/review/michael-chabon-sandmeyer-reaction-short-story.html?_r=0"/></li>
           <li><Link text="The Circle" desc=" - Dave Eggers" href="https://www.goodreads.com/book/show/18302455-the-circle" /></li>
           <li><Link text="Do Androids Dream of Electric Sheep?" desc=" - Philip K. Dick" href="https://www.goodreads.com/book/show/7082.Do_Androids_Dream_of_Electric_Sheep_" /></li>
@@ -42,6 +44,7 @@ const PageContent = React.createClass({
           <li><Link text="Bitch Planet Vol 2" href="https://www.goodreads.com/book/show/29972029-bitch-planet-vol-2" /></li>
           <li><Link text="Foundation" desc=" - Isaac Asimov" href="https://www.goodreads.com/book/show/29579.Foundation" /></li>
           <li><Link text="The Man in the High Castle" desc=" - Philip K. Dick" href="https://www.goodreads.com/book/show/216363.The_Man_in_the_High_Castle" /></li>
+          <li><Link text="The Martian Obelisk" desc=" - Linda Nagata" href="http://www.tor.com/2017/07/19/the-martian-obelisk/" /></li>
         </ol>
       </div>
     );
@@ -56,7 +59,8 @@ const linkStyle = {
 };
 
 const textStyle = {
-  backgroundColor: 'white'
+  backgroundColor: 'white',
+  lineHeight: '2rem'
 }
 
 const Link = React.createClass({
