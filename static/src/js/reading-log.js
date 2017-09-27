@@ -22,8 +22,8 @@ const PageContent = React.createClass({
       <div style={contentStyle}>
         <h2 style={hStyle}><em>Currently Reading</em></h2>
         <ol style={olStyle}>
+          <li><Link text="South and West" desc=" - Joan Didion" href="https://www.goodreads.com/book/show/32842454-south-and-west" /></li>
           <li><Link text="G&ouml;del, Escher, Bach: An Eternal Golden Braid" desc=" - Douglas R. Hofstadter" href="https://www.goodreads.com/book/show/24113.G_del_Escher_Bach" /></li>
-          <li><Link text="Wild" desc=" - Cheryl Strayed" href="https://www.goodreads.com/book/show/12262741-wild" /></li>
           <li><Link text="Tech Against Trump" desc=" - Logic Magazine" href="https://logicmag.io/tech-against-trump/" /></li>
           <li><Link text="NeuroTribes: The Legacy of Autism and the Future of Neurodiversity" desc=" - Steve Silberman" href="https://www.goodreads.com/book/show/22514020-neurotribes" /></li>
 
@@ -54,6 +54,11 @@ const PageContent = React.createClass({
           <li><Link text="Foundation" desc=" - Isaac Asimov" href="https://www.goodreads.com/book/show/29579.Foundation" /></li>
           <li><Link text="The Man in the High Castle" desc=" - Philip K. Dick" href="https://www.goodreads.com/book/show/216363.The_Man_in_the_High_Castle" /></li>
           <li><Link text="The Martian Obelisk" desc=" - Linda Nagata" href="http://www.tor.com/2017/07/19/the-martian-obelisk/" /></li>
+          <li><Link text="Wild: From Lost to Found on the Pacific Crest Trail" desc=" - Cheryl Strayed" href="https://www.goodreads.com/book/show/12262741-wild" /></li>
+          <li><Link text="Sky Burial: An Epic Love Story of Tibet" desc=" - Xinran" href="https://www.goodreads.com/book/show/183845.Sky_Burial" /></li>
+          <li><Link text="The Dark Forest" desc=" - Cixin Liu" href="https://www.goodreads.com/book/show/23168817-the-dark-forest" /></li>
+          <li><Link text="Hillbilly Elegy" desc=" - J.D. Vance" href="https://www.goodreads.com/book/show/27161156-hillbilly-elegy" /></li>
+          <li><Link text="Comics for Choice" desc="" href="http://comicsforchoice.com/" /></li>
         </ol>
       </div>
       </div>
