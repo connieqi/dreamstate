@@ -22,11 +22,9 @@ const PageContent = React.createClass({
       <div style={contentStyle}>
         <h2 style={hStyle}><em>Currently Reading</em></h2>
         <ol style={olStyle}>
-          <li><Link text="South and West" desc=" - Joan Didion" href="https://www.goodreads.com/book/show/32842454-south-and-west" /></li>
+          <li><Link text="Salt" desc=" - Nayyirah Waheed" href="https://www.goodreads.com/book/show/18585282-salt" /></li>
+          <li><Link text="Sister Outsider" desc=" - Audre Lorde" href="https://www.goodreads.com/book/show/32951.Sister_Outsider" /></li>
           <li><Link text="G&ouml;del, Escher, Bach: An Eternal Golden Braid" desc=" - Douglas R. Hofstadter" href="https://www.goodreads.com/book/show/24113.G_del_Escher_Bach" /></li>
-          <li><Link text="Tech Against Trump" desc=" - Logic Magazine" href="https://logicmag.io/tech-against-trump/" /></li>
-          <li><Link text="NeuroTribes: The Legacy of Autism and the Future of Neurodiversity" desc=" - Steve Silberman" href="https://www.goodreads.com/book/show/22514020-neurotribes" /></li>
-
         </ol>
       </div>
       <div style={contentStyle}>
@@ -59,6 +57,8 @@ const PageContent = React.createClass({
           <li><Link text="The Dark Forest" desc=" - Cixin Liu" href="https://www.goodreads.com/book/show/23168817-the-dark-forest" /></li>
           <li><Link text="Hillbilly Elegy" desc=" - J.D. Vance" href="https://www.goodreads.com/book/show/27161156-hillbilly-elegy" /></li>
           <li><Link text="Comics for Choice" desc="" href="http://comicsforchoice.com/" /></li>
+          <li><Link text="Milk and Honey" desc=" - Rupi Kaur" href="https://www.goodreads.com/book/show/23513349-milk-and-honey" /></li>
+          <li><Link text="The Sun and Her Flowers" desc=" - Rupi Kaur" href="https://www.goodreads.com/book/show/35606560-the-sun-and-her-flowers" /></li>
         </ol>
       </div>
       </div>
