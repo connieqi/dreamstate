@@ -24,6 +24,7 @@ const PageContent = React.createClass({
         <ol style={olStyle}>
           <li><Link text="Salt" desc=" - Nayyirah Waheed" href="https://www.goodreads.com/book/show/18585282-salt" /></li>
           <li><Link text="Sister Outsider" desc=" - Audre Lorde" href="https://www.goodreads.com/book/show/32951.Sister_Outsider" /></li>
+          <li><Link text="A Tale for the Time Being" desc=" - Ruth Ozeki" href="https://www.goodreads.com/book/show/15811545-a-tale-for-the-time-being" /></li>
           <li><Link text="G&ouml;del, Escher, Bach: An Eternal Golden Braid" desc=" - Douglas R. Hofstadter" href="https://www.goodreads.com/book/show/24113.G_del_Escher_Bach" /></li>
         </ol>
       </div>
