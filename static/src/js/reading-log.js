@@ -22,9 +22,10 @@ const PageContent = React.createClass({
       <div style={contentStyle}>
         <h2 style={hStyle}><em>Currently Reading</em></h2>
         <ol style={olStyle}>
-          <li><Link text="Salt" desc=" - Nayyirah Waheed" href="https://www.goodreads.com/book/show/18585282-salt" /></li>
           <li><Link text="Sister Outsider" desc=" - Audre Lorde" href="https://www.goodreads.com/book/show/32951.Sister_Outsider" /></li>
-          <li><Link text="A Tale for the Time Being" desc=" - Ruth Ozeki" href="https://www.goodreads.com/book/show/15811545-a-tale-for-the-time-being" /></li>
+          <li><Link text="The Dream of a Common Language" desc=" - Adrienne Rich" href="https://www.goodreads.com/book/show/364141.The_Dream_of_a_Common_Language" /></li>
+          <li><Link text="Slouching Towards Bethlehem" desc=" - Joan Didion" href="https://www.goodreads.com/book/show/424.Slouching_Towards_Bethlehem" /></li>
+          <li><Link text="Astrophysics for People in a Hurry" desc=" - Neil deGrasse Tyson" href="https://www.goodreads.com/book/show/32191710-astrophysics-for-people-in-a-hurry" /></li>
           <li><Link text="G&ouml;del, Escher, Bach: An Eternal Golden Braid" desc=" - Douglas R. Hofstadter" href="https://www.goodreads.com/book/show/24113.G_del_Escher_Bach" /></li>
         </ol>
       </div>
@@ -60,6 +61,7 @@ const PageContent = React.createClass({
           <li><Link text="Comics for Choice" desc="" href="http://comicsforchoice.com/" /></li>
           <li><Link text="Milk and Honey" desc=" - Rupi Kaur" href="https://www.goodreads.com/book/show/23513349-milk-and-honey" /></li>
           <li><Link text="The Sun and Her Flowers" desc=" - Rupi Kaur" href="https://www.goodreads.com/book/show/35606560-the-sun-and-her-flowers" /></li>
+          <li><Link text="Salt" desc=" - Nayyirah Waheed" href="https://www.goodreads.com/book/show/18585282-salt" /></li>
         </ol>
       </div>
       </div>
