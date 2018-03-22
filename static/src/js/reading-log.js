@@ -92,7 +92,7 @@ class PageContent extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            logData: []
+            data: []
         };
     }
 
@@ -102,7 +102,7 @@ class PageContent extends React.Component {
                 return response.json();
             })
             .then(jsonData => {
-                this.setState({logData: jsonData.log}, () => {})
+                this.setState({data: jsonData}, () => {})
             });
     }
 
@@ -111,11 +111,11 @@ class PageContent extends React.Component {
     }
 
     render() {
-        const {logData} = this.state;
+        const {data} = this.state;
         let sections = [];
 
-        if (logData) {
-            sections = logData.map(s => {
+        if (data) {
+            sections = data.map(s => {
                 return (
                     <Section sectionName={s.sectionName}
                         key={s.sectionName}
