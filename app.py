@@ -1,32 +1,40 @@
 import os
-from flask import Flask,render_template,send_from_directory
+from flask import Flask
+from flask import json
+from flask import render_template
+from flask import Response
+from flask import send_from_directory
 
 app = Flask(__name__)
 
 
 @app.route('/')
 def index():
-    options = {
-    };
+    options = {}
     return render_template('index.html', **options)
 
 @app.route('/digital')
 def digital():
-    options = {
-    };
+    options = {}
     return render_template('digital.html', **options)
 
 @app.route('/links')
 def links():
-    options = {
-    };
+    options = {}
     return render_template('links.html', **options)
 
 @app.route('/reading-log')
 def reading_log():
-    options = {
-    };
+    options = {}
     return render_template('reading-log.html', **options)
+
+@app.route('/reading-log/ajax')
+def books_ajax():
+    with open('static/data/reading-log.json') as f:
+        data = json.load(f)
+        json_data = json.dumps(data)
+        resp = Response(json_data, status=200, mimetype='application/json')
+        return resp
 
 # this guy handles static files
 @app.route('/<path:filename>')

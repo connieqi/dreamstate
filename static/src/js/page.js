@@ -1,3 +1,7 @@
+const h1Style = {
+  backgroundColor: 'white'
+};
+
 const Header = React.createClass({
   render: function() {
     const style = {
@@ -7,21 +11,17 @@ const Header = React.createClass({
       fontSize: '24px',
       letterSpacing: '0.75em',
       textTransform: 'uppercase',
-      color: 'black',
+      color: '#66FF00',
 
     };
 
     return (
       <a href="/" style={style}>
-        <img src="/static/images/holo-title.gif" />
+        <h1 style={h1Style}>Dream State</h1>
       </a>
     );
   }
 });
-
-const h1Style = {
-  backgroundColor: 'white'
-};
 
 const Nav = React.createClass({
   render: function() {

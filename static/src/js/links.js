@@ -5,8 +5,15 @@ const PageContent = React.createClass({
   render: function() {
     return (
       <div>
-        <Link text="https://www.shortoftheweek.com/" href="https://www.shortoftheweek.com/" desc=" &mdash; new short films curated by Vimeo"/>
-        <Link text="Astronomy Picture of the Day" href="http://apod.nasa.gov/apod/astropix.html" desc="" />
+        <Link text="https://www.shortoftheweek.com/"
+            href="https://www.shortoftheweek.com/"
+            desc=" &mdash; short films curated by Vimeo"/>
+        <Link text="Astronomy Picture of the Day"
+            href="http://apod.nasa.gov/apod/astropix.html"
+            desc=" (NASA)" />
+        <Link text="http://brutalistwebsites.com/"
+            href="http://brutalistwebsites.com/"
+            desc="" />
       </div>
     );
   }
