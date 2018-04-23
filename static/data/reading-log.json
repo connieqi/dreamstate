@@ -3,9 +3,14 @@
         "sectionName": "Currently Reading",
         "books": [
             {
-                "title": "Sunday Sugar",
-                "author": "Q. Gibson",
-                "goodreadsId": "35224002"
+                "title": "Circe",
+                "author": "Madeline Miller",
+                "goodreadsId": "35959740"
+            },
+            {
+                "title": "Meaty",
+                "author": "Samantha Irby",
+                "goodreadsId": "17259934"
             },
             {
                 "title": "We Were Eight Years in Power: An American Tragedy",
@@ -91,6 +96,26 @@
                 "title": "The Power",
                 "author": "Naomi Alderman",
                 "goodreadsId": "29751398"
+            },
+            {
+                "title": "Aporia",
+                "author": "Leo Alterman",
+                "url": "http://aporia.ohnoleo.com/"
+            },
+            {
+                "title": "Snotgirl Vol 1",
+                "author": "Bryan Lee O'Malley",
+                "goodreadsId": "31387205"
+            },
+            {
+                "title": "Riverdale #0-11",
+                "author": "Roberto Aguirre-Sacasa",
+                "goodreadsId": "34220229"
+            },
+            {
+                "title": "Sunday Sugar",
+                "author": "Q. Gibson",
+                "goodreadsId": "35224002"
             }
         ]
     },
