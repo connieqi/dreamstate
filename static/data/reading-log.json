@@ -3,11 +3,6 @@
         "sectionName": "Currently Reading",
         "books": [
             {
-                "title": "Circe",
-                "author": "Madeline Miller",
-                "goodreadsId": "35959740"
-            },
-            {
                 "title": "Meaty",
                 "author": "Samantha Irby",
                 "goodreadsId": "17259934"
@@ -116,6 +111,11 @@
                 "title": "Sunday Sugar",
                 "author": "Q. Gibson",
                 "goodreadsId": "35224002"
+            },
+            {
+                "title": "Circe",
+                "author": "Madeline Miller",
+                "goodreadsId": "35959740"
             }
         ]
     },
