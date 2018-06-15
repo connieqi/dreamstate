@@ -2,7 +2,7 @@ const LandingPage = React.createClass({
   render: function() {
     return (
       <div>
-        <CenterImage src="static/images/000483320030.jpg" />
+        <CenterImage src="static/images/000483310006.jpg" />
 
       </div>
     )
