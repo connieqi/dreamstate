@@ -3,11 +3,6 @@
         "sectionName": "Currently Reading",
         "books": [
             {
-                "title": "Meaty",
-                "author": "Samantha Irby",
-                "goodreadsId": "17259934"
-            },
-            {
                 "title": "We Were Eight Years in Power: An American Tragedy",
                 "author": "Ta-Nehisi Coates",
                 "goodreadsId": "33916061"
@@ -116,6 +111,11 @@
                 "title": "Circe",
                 "author": "Madeline Miller",
                 "goodreadsId": "35959740"
+            },
+            {
+                "title": "Meaty",
+                "author": "Samantha Irby",
+                "goodreadsId": "17259934"
             }
         ]
     },

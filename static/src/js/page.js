@@ -33,7 +33,7 @@ const Nav = React.createClass({
       <div id="nav">
         <ul style={ulStyle}>
           <li><Link text="Reading Log" href="/reading-log" /></li>
-          <li><Link text="Photos" href="https://cyq1.tumblr.com" /></li>
+          <li><Link text="Photos 2016-2017" href="https://cyq1.tumblr.com" /></li>
           <li><Link text="Links" href="/links" /></li>
         </ul>
       </div>
