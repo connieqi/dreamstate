@@ -32,8 +32,8 @@ const Images = React.createClass({
 const CenterImage = React.createClass({
   render: function() {
     const style = {
-      maxWidth: '600px',
-      maxHeight: '600px',
+      maxWidth: '700px',
+      maxHeight: '700px',
       border: '2px solid Blue',
       margin: '10px',
     }
