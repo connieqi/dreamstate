@@ -23,6 +23,11 @@ def links():
     options = {}
     return render_template('links.html', **options)
 
+@app.route('/sketchbook')
+def sketchbook():
+    options = {}
+    return render_template('sketchbook.html', **options)
+
 @app.route('/reading-log')
 def reading_log():
     options = {}
