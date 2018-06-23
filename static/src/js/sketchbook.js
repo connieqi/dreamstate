@@ -13,7 +13,7 @@ const Images = React.createClass({
   render: function() {
     const content = [];
     for (var i = NUM_SKETCHES - 1; i >= 0; i--) {
-        content.push(<CenterImage src={`static/images/sketch${i}.jpg`} />)
+        content.push(<CenterImage src={`static/images/sketchbook/sketch${i}.jpg`} />)
         if (i in captions){
             content.push(<div style={captionStyle}>{captions[i]}</div>)
         }
