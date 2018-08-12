@@ -1,20 +1,5 @@
 [
     {
-        "sectionName": "Currently Reading",
-        "books": [
-            {
-                "title": "We Were Eight Years in Power: An American Tragedy",
-                "author": "Ta-Nehisi Coates",
-                "goodreadsId": "33916061"
-            },
-            {
-                "title": "Sister Outsider",
-                "author": "Audre Lorde",
-                "goodreadsId": "32951"
-            }
-        ]
-    },
-    {
         "sectionName": "2018",
         "books": [
             {
@@ -116,6 +101,26 @@
                 "title": "Meaty",
                 "author": "Samantha Irby",
                 "goodreadsId": "17259934"
+            },
+            {
+                "title": "Zoria of the Twin Moons",
+                "author": "Cheez Hayama",
+                "url": "https://hayamaya.com/works/"
+            },
+            {
+                "title": "Ultralight Backpackin' Tips",
+                "author": "Mike Clelland",
+                "url": "https://www.amazon.com/dp/B00MJD6LVS/"
+            },
+            {
+                "title": "Thru-Hiking Will Break Your Heart: An Adventure on the Pacific Crest Trail",
+                "author": "Carrot Quinn",
+                "goodreadsId": "25365636"
+            },
+            {
+                "title": "The Best We Could Do",
+                "author": "Thi Bui",
+                "goodreadsId": "29936927"
             }
         ]
     },
