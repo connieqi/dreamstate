@@ -41,6 +41,10 @@ def books_ajax():
         resp = Response(json_data, status=200, mimetype='application/json')
         return resp
 
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
 # this guy handles static files
 @app.route('/<path:filename>')
 def send_pic(filename):
