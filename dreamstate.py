@@ -54,6 +54,13 @@ def photos2016():
     }
     return render_template('content-page.html', **options)
 
+@app.route('/photos2017')
+def photos2017():
+    options = {
+        'js_file': 'photos2017'
+    }
+    return render_template('content-page.html', **options)
+
 @app.route('/reading-log')
 def reading_log():
     options = {

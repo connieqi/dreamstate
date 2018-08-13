@@ -1,4 +1,4 @@
-const NUM_IMGS = 20;
+const NUM_IMGS = 17;
 
 const captions = {
 }
@@ -8,7 +8,7 @@ const Images = React.createClass({
         const content = [];
         for (var i = 0; i < NUM_IMGS; i++) {
             content.push(
-                <img src={`static/images/2016/img2016-${i}.jpg`}
+                <img src={`static/images/2017/img2017-${i}.jpg`}
                     className="xlarge" />
             )
             if (i in captions){
@@ -18,7 +18,7 @@ const Images = React.createClass({
 
         return (
             <div className="image-container">
-                <p><span>Disposable camera snaps from 2016: Portland, Bay Area and Yosemite</span></p>
+                <p><span>Mostly California, some Nevada during Life is Beautiful 2017.</span></p>
                 {content}
             </div>
         )
