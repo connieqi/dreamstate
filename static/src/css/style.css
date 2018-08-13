@@ -1,7 +1,7 @@
 html {
     height: 100%;
     width:100%;
-    background-color: black;
+    background-color: blue;
 }
 
 body {
@@ -44,11 +44,7 @@ body {
     list-style-type: none;
 }
 
-h1 {
-    background-color: white;
-}
-
-span {
+h1, span, caption {
     background-color: white;
 }
 

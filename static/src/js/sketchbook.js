@@ -5,17 +5,13 @@ const captions = {
     19: "Drinks had in Paris, June 2018"
 }
 
-const captionStyle = {
-    backgroundColor: 'white'
-}
-
 const Images = React.createClass({
   render: function() {
     const content = [];
     for (var i = NUM_IMGS - 1; i >= 0; i--) {
         content.push(<CenterImage src={`static/images/sketchbook/sketch${i}.jpg`} />)
         if (i in captions){
-            content.push(<div style={captionStyle}>{captions[i]}</div>)
+            content.push(<div class="caption">{captions[i]}</div>)
         }
     }
 

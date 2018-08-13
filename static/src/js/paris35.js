@@ -3,17 +3,13 @@ const NUM_IMGS = 41;
 const captions = {
 }
 
-const captionStyle = {
-    backgroundColor: 'white'
-}
-
 const Images = React.createClass({
   render: function() {
     const content = [];
     for (var i = 0; i < NUM_IMGS; i++) {
         content.push(<CenterImage src={`static/images/paris-2018-35/paris35-${i}.jpg`} />)
         if (i in captions){
-            content.push(<div style={captionStyle}>{captions[i]}</div>)
+            content.push(<div class="caption">{captions[i]}</div>)
         }
     }
 
