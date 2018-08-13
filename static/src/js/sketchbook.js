@@ -5,26 +5,24 @@ const captions = {
     19: "Drinks had in Paris, June 2018"
 }
 
-const Images = React.createClass({
-    render: function() {
-        const content = [];
-        for (var i = NUM_IMGS - 1; i >= 0; i--) {
-            content.push(
-                <img src={`static/images/sketchbook/sketch${i}.jpg`}
-                    className="large" />
-            )
-            if (i in captions){
-                content.push(<div class="caption">{captions[i]}</div>)
-            }
-        }
-
-        return (
-            <div className="image-container">
-                {content}
-            </div>
+const Images = () => {
+    const content = [];
+    for (let i = NUM_IMGS - 1; i >= 0; i--) {
+        content.push(
+            <img src={`static/images/sketchbook/sketch${i}.jpg`}
+                className="large" />
         )
+        if (i in captions){
+            content.push(<div class="caption">{captions[i]}</div>)
+        }
     }
-});
+
+    return (
+        <div className="image-container">
+            {content}
+        </div>
+    )
+};
 
 ReactDOM.render(
     <Images />,

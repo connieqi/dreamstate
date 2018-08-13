@@ -46,7 +46,7 @@ body {
     color: #66FF00;
 }
 
-h1, span, caption, a {
+h1, h2, span, caption, a {
     background-color: white;
 }
 
@@ -72,6 +72,11 @@ img {
     margin: 10px;
 }
 
+img.xsmall {
+    max-width: 250px;
+    max-height: 250px;
+}
+
 img.small {
     max-width: 500px;
     max-height: 500px;
@@ -92,7 +97,7 @@ img.xlarge {
     max-height: 700px;
 }
 
-.reading-log .section {
+.section {
     background-color: white;
     width: 650px;
     padding-right: 20px;
@@ -108,4 +113,17 @@ img.xlarge {
 
 .reading-log .section ol {
     text-align: left;
+}
+
+.about-section {
+    padding: 25px;
+    width: 600px;
+}
+
+.about-section a {
+    line-height: normal;
+}
+
+.about-section img {
+    border: none;
 }
