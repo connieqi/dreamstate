@@ -16,14 +16,6 @@ body {
     background-repeat: repeat;
     background-position: top left;
     background-color: white;
-
-    /*background-color: #D4D5FC;*/
-}
-
-#top-bar {
-    height: 7px;
-    width: 100%;
-    background-color: black;
 }
 
 #heading-container, #content-container {
