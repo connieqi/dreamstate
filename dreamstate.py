@@ -25,6 +25,10 @@ def digital():
 def links():
     return render_template('links.html')
 
+@app.route('/paris110')
+def paris110():
+    return render_template('paris110.html')
+
 @app.route('/paris35')
 def paris35():
     return render_template('paris35.html')
