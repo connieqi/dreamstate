@@ -9,7 +9,10 @@ const Images = React.createClass({
     render: function() {
         const content = [];
         for (var i = NUM_IMGS - 1; i >= 0; i--) {
-            content.push(<CenterImage src={`static/images/sketchbook/sketch${i}.jpg`} />)
+            content.push(
+                <img src={`static/images/sketchbook/sketch${i}.jpg`}
+                    className="large" />
+            )
             if (i in captions){
                 content.push(<div class="caption">{captions[i]}</div>)
             }
@@ -19,14 +22,6 @@ const Images = React.createClass({
             <div className="image-container">
                 {content}
             </div>
-        )
-    }
-});
-
-const CenterImage = React.createClass({
-    render: function() {
-        return (
-            <img src={this.props.src} className="large" />
         )
     }
 });

@@ -7,7 +7,10 @@ const Images = React.createClass({
     render: function() {
         const content = [];
         for (var i = 0; i < NUM_IMGS; i++) {
-            content.push(<CenterImage src={`static/images/paris-2018-110/paris110-${i}.jpg`} />)
+            content.push(
+                <img src={`static/images/paris-2018-110/paris110-${i}.jpg`}
+                    className="med"/>
+            )
             if (i in captions){
                 content.push(<div class="caption">{captions[i]}</div>)
             }
@@ -16,18 +19,10 @@ const Images = React.createClass({
         return (
             <div className="image-container">
                 <p><span>
-                    Taken with a Lomography Diana Baby 110 camera / Tiger 200 film
+                    Taken with a Diana Baby 110 camera & Tiger 200 film
                 </span></p>
                 {content}
             </div>
-        )
-    }
-});
-
-const CenterImage = React.createClass({
-    render: function() {
-        return (
-          <img src={this.props.src} className="med" />
         )
     }
 });

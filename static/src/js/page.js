@@ -8,6 +8,17 @@ const Header = React.createClass({
     }
 });
 
+const Link = React.createClass({
+    render: function() {
+        return (
+            <a href={this.props.href}
+                className="nav-link">
+                <em>{this.props.text}</em>
+            </a>
+        );
+    }
+});
+
 const Nav = React.createClass({
     render: function() {
         return (
@@ -21,17 +32,6 @@ const Nav = React.createClass({
                     <li><Link text="About" href="/about" /></li>
                 </ul>
             </div>
-        );
-    }
-});
-
-const Link = React.createClass({
-    render: function() {
-        return (
-            <a href={this.props.href}
-                className="nav-link">
-                <em>{this.props.text}</em>
-            </a>
         );
     }
 });
