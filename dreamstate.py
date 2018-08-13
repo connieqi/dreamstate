@@ -10,32 +10,49 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    options = {}
-    return render_template('index.html', **options)
+    return render_template('index.html')
 
 @app.route('/about')
 def about():
-    return render_template('about.html')
+    options = {
+        'js_file': 'about'
+    }
+    return render_template('content-page.html', **options)
 
 @app.route('/digital')
 def digital():
-    return render_template('digital.html')
+    options = {
+        'js_file': 'digital'
+    }
+    return render_template('content-page.html', **options)
 
 @app.route('/links')
 def links():
-    return render_template('links.html')
+    options = {
+        'js_file': 'links'
+    }
+    return render_template('content-page.html', **options)
 
 @app.route('/paris110')
 def paris110():
-    return render_template('paris110.html')
+    options = {
+        'js_file': 'paris110'
+    }
+    return render_template('content-page.html', **options)
 
 @app.route('/paris35')
 def paris35():
-    return render_template('paris35.html')
+    options = {
+        'js_file': 'paris35'
+    }
+    return render_template('content-page.html', **options)
 
 @app.route('/reading-log')
 def reading_log():
-    return render_template('reading-log.html')
+    options = {
+        'js_file': 'reading-log'
+    }
+    return render_template('content-page.html', **options)
 
 @app.route('/reading-log/ajax')
 def books_ajax():
@@ -47,7 +64,10 @@ def books_ajax():
 
 @app.route('/sketchbook')
 def sketchbook():
-    return render_template('sketchbook.html')
+    options = {
+        'js_file': 'sketchbook'
+    }
+    return render_template('content-page.html', **options)
 
 @app.route('/<path:filename>')
 def static_file(filename):
