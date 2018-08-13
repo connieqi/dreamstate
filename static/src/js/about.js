@@ -1,34 +1,16 @@
-// TODO: set up require.js
-// import Link from "page"
-
 const PageContent = React.createClass({
   render: function() {
     return (
       <div>
-        <Link text="icons by Icons8"
-            href="https://icons8.com/"/>
+        <p><span>All photos taken by me.</span></p>
+        <p>
+            <span>Pizza icon from</span>
+            {' '}
+            <a href="https://icons8.com/"
+                target="_blank"
+                rel="noopener noreferrer">Icons8</a>
+        </p>
       </div>
-    );
-  }
-})
-
-const linkStyle = {
-  color: 'black',
-  backgroundColor: 'white',
-  fontSize: '16px',
-  lineHeight: '2rem',
-};
-
-const textStyle = {
-  backgroundColor: 'white'
-}
-
-const Link = React.createClass({
-  render: function() {
-    return (
-      <p>
-        <a href={this.props.href} target="_blank" style={linkStyle}><em>{this.props.text}</em></a><span style={textStyle}>{this.props.desc}</span>
-      </p>
     );
   }
 });

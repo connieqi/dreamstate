@@ -1,7 +1,3 @@
-const h1Style = {
-  backgroundColor: 'white'
-};
-
 const Header = React.createClass({
   render: function() {
     const style = {
@@ -17,7 +13,7 @@ const Header = React.createClass({
 
     return (
       <a href="/" style={style}>
-        <h1 style={h1Style}>Dream State</h1>
+        <h1>Dream State</h1>
       </a>
     );
   }
@@ -25,13 +21,9 @@ const Header = React.createClass({
 
 const Nav = React.createClass({
   render: function() {
-    const ulStyle = {
-      listStyleType: 'none'
-    };
-
     return (
       <div id="nav">
-        <ul style={ulStyle}>
+        <ul>
           <li><Link text="Paris 2018 35mm" href="/paris35" /></li>
           <li><Link text="Sketchbook" href="/sketchbook" /></li>
           <li><Link text="Reading Log" href="/reading-log" /></li>

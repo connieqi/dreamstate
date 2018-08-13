@@ -39,3 +39,22 @@ body {
 #nav-container {
     position: absolute;
 }
+
+#nav ul {
+    list-style-type: none;
+}
+
+h1 {
+    background-color: white;
+}
+
+span {
+    background-color: white;
+}
+
+a {
+  color: black;
+  background-color: white;
+  font-size: 16px;
+  line-height: 2rem;
+};

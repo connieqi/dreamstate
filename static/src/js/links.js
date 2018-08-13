@@ -21,22 +21,16 @@ const PageContent = React.createClass({
   }
 })
 
-const linkStyle = {
-  color: 'black',
-  backgroundColor: 'white',
-  fontSize: '16px',
-  lineHeight: '2rem',
-};
-
-const textStyle = {
-  backgroundColor: 'white'
-}
-
 const Link = React.createClass({
   render: function() {
     return (
       <p>
-        <a href={this.props.href} target="_blank" style={linkStyle}><em>{this.props.text}</em></a><span style={textStyle}>{this.props.desc}</span>
+        <a href={this.props.href}
+            target="_blank"
+            rel="noopener noreferrer">
+                <em>{this.props.text}</em>
+            </a>
+            <span>{this.props.desc}</span>
       </p>
     );
   }
