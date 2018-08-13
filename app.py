@@ -13,25 +13,25 @@ def index():
     options = {}
     return render_template('index.html', **options)
 
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
 @app.route('/digital')
 def digital():
-    options = {}
-    return render_template('digital.html', **options)
+    return render_template('digital.html')
 
 @app.route('/links')
 def links():
-    options = {}
-    return render_template('links.html', **options)
+    return render_template('links.html')
 
-@app.route('/sketchbook')
-def sketchbook():
-    options = {}
-    return render_template('sketchbook.html', **options)
+@app.route('/paris35')
+def paris35():
+    return render_template('paris35.html')
 
 @app.route('/reading-log')
 def reading_log():
-    options = {}
-    return render_template('reading-log.html', **options)
+    return render_template('reading-log.html')
 
 @app.route('/reading-log/ajax')
 def books_ajax():
@@ -41,13 +41,12 @@ def books_ajax():
         resp = Response(json_data, status=200, mimetype='application/json')
         return resp
 
-@app.route('/about')
-def about():
-    return render_template('about.html')
+@app.route('/sketchbook')
+def sketchbook():
+    return render_template('sketchbook.html')
 
-# this guy handles static files
 @app.route('/<path:filename>')
-def send_pic(filename):
+def static_file(filename):
     print(filename)
     return send_from_directory('./static/', filename)
 

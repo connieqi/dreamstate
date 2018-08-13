@@ -14,6 +14,8 @@ const PageContent = React.createClass({
         <Link text="http://brutalistwebsites.com/"
             href="http://brutalistwebsites.com/"
             desc="" />
+        <Link text="http://cyq1.tumblr.com" href="http://cyq1.tumblr.com"
+            desc=" &mdash; Some of my older photos from 2016-2017"/>
       </div>
     );
   }

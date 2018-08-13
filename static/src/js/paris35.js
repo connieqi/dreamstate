@@ -1,8 +1,6 @@
-const NUM_IMGS = 20;
+const NUM_IMGS = 41;
 
 const captions = {
-    17: "A study of Magritte's \"The Listening Room\"",
-    19: "Drinks had in Paris, June 2018"
 }
 
 const captionStyle = {
@@ -12,8 +10,8 @@ const captionStyle = {
 const Images = React.createClass({
   render: function() {
     const content = [];
-    for (var i = NUM_IMGS - 1; i >= 0; i--) {
-        content.push(<CenterImage src={`static/images/sketchbook/sketch${i}.jpg`} />)
+    for (var i = 0; i < NUM_IMGS; i++) {
+        content.push(<CenterImage src={`static/images/paris-2018-35/paris35-${i}.jpg`} />)
         if (i in captions){
             content.push(<div style={captionStyle}>{captions[i]}</div>)
         }
