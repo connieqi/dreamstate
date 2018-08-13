@@ -25,6 +25,10 @@ def digital():
 def links():
     return render_template('links.html')
 
+@app.route('/loaderio-98852357bd6d56438d9640c5bcc7a3fa')
+def loaderio():
+    return 'loaderio-98852357bd6d56438d9640c5bcc7a3fa'
+
 @app.route('/paris35')
 def paris35():
     return render_template('paris35.html')
