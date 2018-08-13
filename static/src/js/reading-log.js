@@ -1,45 +1,13 @@
-const linkStyle = {
-    color: 'black',
-    backgroundColor: 'white',
-    fontSize: '16px',
-    lineHeight: '2rem',
-};
-
-const textStyle = {
-    backgroundColor: 'white',
-    lineHeight: '2rem'
-};
-
-const contentStyle = {
-    backgroundColor: 'white',
-    width: '650px',
-    paddingRight: '20px',
-    paddingBottom: '10px',
-    marginBottom: '30px'
-};
-
-const olStyle = {
-    textAlign: 'left'
-};
-
-const hStyle = {
-    display: 'inline-block',
-    overflow: 'hidden',
-    letterSpacing: '0.4em',
-    textTransform: 'uppercase',
-    backgroundColor: 'white'
-};
-
-const Link = ({text, desc, href}) => {
+const ExternalLink = ({text, desc, href}) => {
     return (
         <p>
             <a href={href}
                 target="_blank"
                 rel="noopener noreferrer"
-                style={linkStyle}>
+                aria-label="Opens new tab">
                 <em>{text}</em>
             </a>
-            <span style={textStyle}>{desc}</span>
+            <span>{desc}</span>
         </p>
     );
 };
@@ -55,7 +23,7 @@ const Book = ({title, author, goodreadsId, url}) => {
 
     return (
         <li>
-            <Link text={title}
+            <ExternalLink text={title}
                 desc={author ? ` - ${author}` : ''}
                 href={href}
                 />
@@ -79,11 +47,9 @@ const Section = ({sectionName, books}) => {
     }
 
     return (
-        <div style={contentStyle}>
-            <h2 style={hStyle}><em>{sectionName}</em></h2>
-            <ol style={olStyle}>
-                {bookComps}
-            </ol>
+        <div className="section">
+            <h2><em>{sectionName}</em></h2>
+            <ol>{bookComps}</ol>
         </div>
     );
 };
@@ -124,7 +90,7 @@ class PageContent extends React.Component {
             });
         }
 
-        return (<div>{sections}</div>);
+        return (<div className="reading-log">{sections}</div>);
     }
 }
 
