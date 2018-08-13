@@ -1,4 +1,4 @@
-const NUM_IMGS = 41;
+const NUM_IMGS = 26;
 
 const captions = {
 }
@@ -8,7 +8,7 @@ const Images = React.createClass({
         const content = [];
         for (var i = 0; i < NUM_IMGS; i++) {
             content.push(
-                <img src={`static/images/paris-2018-35/paris35-${i}.jpg`}
+                <img src={`static/images/california-2018/ca2018-${i}.jpg`}
                     className="xlarge" />
             )
             if (i in captions){

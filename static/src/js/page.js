@@ -26,6 +26,7 @@ const Nav = React.createClass({
                 <ul>
                     <li><Link text="Paris 2018 35mm" href="/paris35" /></li>
                     <li><Link text="Paris 2018 110" href="/paris110" /></li>
+                    <li><Link text="California 2018" href="/california2018" /></li>
                     <li><Link text="Sketchbook" href="/sketchbook" /></li>
                     <li><Link text="Reading Log" href="/reading-log" /></li>
                     <li><Link text="Links" href="/links" /></li>

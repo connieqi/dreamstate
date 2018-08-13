@@ -19,6 +19,13 @@ def about():
     }
     return render_template('content-page.html', **options)
 
+@app.route('/california2018')
+def california2018():
+    options = {
+        'js_file': 'california2018'
+    }
+    return render_template('content-page.html', **options)
+
 @app.route('/links')
 def links():
     options = {

@@ -87,6 +87,11 @@ img.large {
     max-height: 700px;
 }
 
+img.xlarge {
+    max-width: 1000px;
+    max-height: 700px;
+}
+
 .reading-log .section {
     background-color: white;
     width: 650px;
