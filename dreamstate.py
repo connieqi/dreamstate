@@ -25,10 +25,6 @@ def digital():
 def links():
     return render_template('links.html')
 
-@app.route('/loaderio-98852357bd6d56438d9640c5bcc7a3fa')
-def loaderio():
-    return 'loaderio-98852357bd6d56438d9640c5bcc7a3fa'
-
 @app.route('/paris35')
 def paris35():
     return render_template('paris35.html')
@@ -52,7 +48,10 @@ def sketchbook():
 @app.route('/<path:filename>')
 def static_file(filename):
     print(filename)
-    return send_from_directory('./static/', filename)
+    if 'loaderio-98852357bd6d56438d9640c5bcc7a3fa' in filename:
+        return 'loaderio-98852357bd6d56438d9640c5bcc7a3fa'
+    else:
+        return send_from_directory('./static/', filename)
 
 
 if __name__ == '__main__':
