@@ -19,13 +19,6 @@ def about():
     }
     return render_template('content-page.html', **options)
 
-@app.route('/digital')
-def digital():
-    options = {
-        'js_file': 'digital'
-    }
-    return render_template('content-page.html', **options)
-
 @app.route('/links')
 def links():
     options = {

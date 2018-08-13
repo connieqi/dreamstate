@@ -44,13 +44,21 @@ body {
     list-style-type: none;
 }
 
-h1, span, caption {
+h1, span, caption, a {
     background-color: white;
 }
 
 a {
   color: black;
-  background-color: white;
   font-size: 16px;
   line-height: 2rem;
-};
+}
+
+img {
+    border: 2px solid blue;
+}
+
+img.small {
+    max-width: 500px;
+    max-height: 500px;
+}
