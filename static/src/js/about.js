@@ -2,7 +2,6 @@ const PageContent = React.createClass({
   render: function() {
     return (
       <div>
-        <p><span>All photos taken by me.</span></p>
         <p>
             <span>Pizza icon from</span>
             {' '}
