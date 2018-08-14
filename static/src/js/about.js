@@ -4,7 +4,7 @@ const PageContent = () => {
             <img src="static/images/self.jpg" className="xsmall" />
             <div className="section about-section">
                 <p><span>
-                    This is my place to share some of my creations with you.
+                    Dream State is a place for me to document some of my creations and share them with you.
                 </span></p>
                 <img src="static/images/favicon-32x32.png" width="16" />
                 <p><span>Made by Connie Qi</span></p>

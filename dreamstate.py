@@ -15,56 +15,56 @@ def index():
 @app.route('/about')
 def about():
     options = {
-        'js_file': 'about'
+        'page_name': 'about'
     }
     return render_template('content-page.html', **options)
 
 @app.route('/california2018')
 def california2018():
     options = {
-        'js_file': 'california2018'
+        'page_name': 'california2018'
     }
     return render_template('content-page.html', **options)
 
 @app.route('/links')
 def links():
     options = {
-        'js_file': 'links'
+        'page_name': 'links'
     }
     return render_template('content-page.html', **options)
 
 @app.route('/paris110')
 def paris110():
     options = {
-        'js_file': 'paris110'
+        'page_name': 'paris110'
     }
     return render_template('content-page.html', **options)
 
 @app.route('/paris35')
 def paris35():
     options = {
-        'js_file': 'paris35'
+        'page_name': 'paris35'
     }
     return render_template('content-page.html', **options)
 
 @app.route('/photos2016')
 def photos2016():
     options = {
-        'js_file': 'photos2016'
+        'page_name': 'photos2016'
     }
     return render_template('content-page.html', **options)
 
 @app.route('/photos2017')
 def photos2017():
     options = {
-        'js_file': 'photos2017'
+        'page_name': 'photos2017'
     }
     return render_template('content-page.html', **options)
 
 @app.route('/reading-log')
 def reading_log():
     options = {
-        'js_file': 'reading-log'
+        'page_name': 'reading-log'
     }
     return render_template('content-page.html', **options)
 
@@ -79,7 +79,7 @@ def books_ajax():
 @app.route('/sketchbook')
 def sketchbook():
     options = {
-        'js_file': 'sketchbook'
+        'page_name': 'sketchbook'
     }
     return render_template('content-page.html', **options)
 

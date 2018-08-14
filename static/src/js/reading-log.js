@@ -35,15 +35,13 @@ const Section = ({sectionName, books}) => {
     let bookComps = [];
 
     if (books) {
-        bookComps = books.map(b => {
-            return (
-                <Book title={b.title}
-                    key={`${b.title} ${b.author}`}
-                    author={b.author}
-                    goodreadsId={b.goodreadsId}
-                    url={b.url} />
-            );
-        });
+        bookComps = books.map(b =>(
+            <Book title={b.title}
+                key={`${b.title} ${b.author}`}
+                author={b.author}
+                goodreadsId={b.goodreadsId}
+                url={b.url} />
+        ));
     }
 
     return (
@@ -81,13 +79,11 @@ class PageContent extends React.Component {
         let sections = [];
 
         if (data) {
-            sections = data.map(s => {
-                return (
-                    <Section sectionName={s.sectionName}
+            sections = data.map(s => (
+                <Section sectionName={s.sectionName}
                         key={s.sectionName}
                         books={s.books} />
-                );
-            });
+            ));
         }
 
         return (<div className="reading-log">{sections}</div>);
