@@ -6,7 +6,9 @@ const PageContent = () => {
                 <p><span>
                     Dream State is a place for me to document some of my creations and share them with you.
                 </span></p>
-                <img src="static/images/favicon-32x32.png" width="16" />
+                <a href="/stuff">
+                    <img src="static/images/favicon-32x32.png" width="16" />
+                </a>
                 <p><span>Made by Connie Qi</span></p>
                 <p><span>Built with ES6, React, Python & Flask</span></p>
                 <p>

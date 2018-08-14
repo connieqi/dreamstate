@@ -83,6 +83,10 @@ def sketchbook():
     }
     return render_template('content-page.html', **options)
 
+@app.route('/stuff')
+def stuff():
+    return render_template('stuff.html')
+
 @app.route('/<path:filename>')
 def static_file(filename):
     print(filename)
