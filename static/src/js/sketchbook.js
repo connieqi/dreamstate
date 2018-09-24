@@ -1,4 +1,4 @@
-const NUM_IMGS = 20;
+const NUM_IMGS = 26;
 
 const captions = {
     17: "A study of Magritte's \"The Listening Room\"",

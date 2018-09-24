@@ -1,4 +1,13 @@
 html {
-    background: url('/static/images/rose-garden.jpg');
+    background: url('/static/images/paris-2018-35/paris35-21.jpg');
     background-repeat: round;
+}
+
+.fun-stuff  {
+    background: url('/static/images/paris-2018-35/paris35-21.jpg');
+    background: url('/static/images/rose-garden.jpg');
+    background: url('/static/images/paris-2018-35/paris35-10.jpg');
+    background: url('/static/images/california-2018/ca2018-0.jpg');
+    background: url('/static/images/california-2018/ca2018-18.jpg');
+    background: url('/static/images/california-2018/ca2018-4.jpg');
 }
