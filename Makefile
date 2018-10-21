@@ -3,7 +3,7 @@ install:
 	pip install -r requirements.txt
 	mkdir log
 start-supervisor:
-	supervisord -c /home/limejello/dreamstate/supervisord.conf
+	supervisord -c /home/limejello/dreamstate/etc/supervisord.conf
 start:
 	sudo supervisorctl start dreamstate
 restart:
