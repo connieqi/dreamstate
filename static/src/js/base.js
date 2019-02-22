@@ -47,9 +47,6 @@ const Nav = () => {
                 <li><Link text="Reading Log"
                     href="/reading-log"
                     currentPage={currentPage} /></li>
-                <li><Link text="Links"
-                    href="/links"
-                    currentPage={currentPage} /></li>
                 <li><Link text="About"
                     href="/about"
                     currentPage={currentPage} /></li>
