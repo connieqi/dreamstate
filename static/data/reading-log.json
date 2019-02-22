@@ -1,5 +1,40 @@
 [
     {
+        "sectionName": "2019",
+        "books": [
+            {
+                "title": "Severance",
+                "author": "Ling Ma",
+                "goodreadsId": "36348525"
+            },
+            {
+                "title": "A River of Stars",
+                "author": "Vanessa Hua",
+                "goodreadsId": "36978059"
+            },
+            {
+                "title": "Trickster's Journey",
+                "author": "Jia Sung",
+                "url": "https://www.printedmatter.org/catalog/51722"
+            },
+            {
+                "title": "American Like Me",
+                "author": "Viet Thanh Nguyen",
+                "url": "http://time.com/5455490/american-like-me/"
+            },
+            {
+                "title": "Diving Into the Wreck",
+                "author": "Adrienne Rich",
+                "goodreadsId": "130810"
+            },
+            {
+                "title": "Piper in the Woods",
+                "author": "Philip K. Dick",
+                "url": "http://www.gutenberg.org/ebooks/32832"
+            }
+        ]
+    },
+    {
         "sectionName": "2018",
         "books": [
             {
