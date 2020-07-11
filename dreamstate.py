@@ -1,3 +1,4 @@
+import logging
 import os
 from flask import Flask
 from flask import json
@@ -23,6 +24,13 @@ def about():
 def california2018():
     options = {
         'page_name': 'california2018'
+    }
+    return render_template('content-page.html', **options)
+
+@app.route('/california2018-110')
+def california2018_110():
+    options = {
+        'page_name': 'california2018-110'
     }
     return render_template('content-page.html', **options)
 
@@ -94,6 +102,7 @@ def stuff():
 @app.route('/<path:filename>')
 def static_file(filename):
     print(filename)
+    app.logger.info(filename)
     if 'loaderio-98852357bd6d56438d9640c5bcc7a3fa' in filename:
         return 'loaderio-98852357bd6d56438d9640c5bcc7a3fa'
     else:
@@ -105,3 +114,10 @@ if __name__ == '__main__':
     print "*** running on port %s" % port
     
     app.run(host='0.0.0.0', port=port, debug=False)
+
+
+if __name__ != '__main__':
+    gunicorn_logger = logging.getLogger('gunicorn.error')
+    app.logger.handlers = gunicorn_logger.handlers
+    app.logger.setLevel(gunicorn_logger.level)
+

@@ -32,6 +32,9 @@ const Nav = () => {
                 <li><Link text="Paris 2018 110"
                     href="/paris110"
                     currentPage={currentPage} /></li>
+                <li><Link text="California 2018 110"
+                    href="/california2018-110"
+                    currentPage={currentPage} /></li>
                 <li><Link text="California 2018"
                     href="/california2018"
                     currentPage={currentPage} /></li>
