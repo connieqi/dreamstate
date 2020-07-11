@@ -34,6 +34,20 @@ def california2018_110():
     }
     return render_template('content-page.html', **options)
 
+@app.route('/california2019-110')
+def california2019_110():
+    options = {
+        'page_name': 'california2019-110'
+    }
+    return render_template('content-page.html', **options)
+
+@app.route('/california2020-110')
+def california2020_110():
+    options = {
+        'page_name': 'california2020-110'
+    }
+    return render_template('content-page.html', **options)
+
 @app.route('/links')
 def links():
     options = {

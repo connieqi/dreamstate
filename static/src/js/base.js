@@ -26,17 +26,23 @@ const Nav = () => {
     return (
         <div id="nav">
             <ul>
+                <li><Link text="California 2020 110"
+                    href="/california2020-110"
+                    currentPage={currentPage} /></li>
+                <li><Link text="California 2019 110"
+                    href="/california2019-110"
+                    currentPage={currentPage} /></li>
                 <li><Link text="Paris 2018 35mm"
                     href="/paris35"
                     currentPage={currentPage} /></li>
                 <li><Link text="Paris 2018 110"
                     href="/paris110"
                     currentPage={currentPage} /></li>
+                <li><Link text="California 2018 35mm"
+                    href="/california2018"
+                    currentPage={currentPage} /></li>
                 <li><Link text="California 2018 110"
                     href="/california2018-110"
-                    currentPage={currentPage} /></li>
-                <li><Link text="California 2018"
-                    href="/california2018"
                     currentPage={currentPage} /></li>
                 <li><Link text="2017"
                     href="/photos2017"
